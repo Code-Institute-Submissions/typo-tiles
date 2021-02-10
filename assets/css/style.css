@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+html {
+    height: 100%;
+}
+body {
+    background: radial-gradient(#D0D7DD, #4c5c68);
+    height: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
