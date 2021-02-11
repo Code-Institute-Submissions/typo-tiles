@@ -24,6 +24,11 @@ body {
     height: 175px;
 }
 
+.card:hover {
+    border: 1px solid #c5c3c6;
+    border-radius: 15px;
+}
+
 .responsive {
     width: 100%;
     height: auto;
