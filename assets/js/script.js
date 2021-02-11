@@ -1,4 +1,7 @@
-.card {
-    width: 125px;
-    height: 175px;
+const cards = document.querySelectorAll('.card');
+
+function flipCard() {
+    this.classList.toggle('flip');
 }
+
+cards.forEach(card => card.addEventListener('click', flipCard));
