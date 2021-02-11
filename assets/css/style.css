@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap300, 400, 500, 600, 700, 800, 900');
 
 html {
     height: 100%;
@@ -11,3 +11,24 @@ body {
     background-attachment: fixed;
 }
 
+.logo {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: #c5c3c6;
+    font-size: 4em;
+}
+
+.card {
+    display: inline-block;
+    width: 125px;
+    height: 175px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    text-align: center;
+}
