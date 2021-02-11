@@ -1,21 +1,4 @@
-/* ------------------------------------ My original styles*/
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap300, 400, 500, 600, 700, 800, 900');
-
-/*
-
-html {
-    height: 100%;
-}
-body {
-    background: radial-gradient(#D0D7DD, #4c5c68);
-    height: 100%;
-    margin: 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-*/
 
 .logo {
     font-family: 'Roboto Slab', serif;
@@ -24,28 +7,8 @@ body {
     font-size: 4em;
 }
 
-/*
-.card {
-    display: inline-block;
-    width: 125px;
-    height: 175px;
-}
+/*---------------------------------Tutorial*/
 
-.card:hover {
-    border: 1px solid #c5c3c6;
-    border-radius: 15px;
-}
-
-.responsive {
-    width: 100%;
-    height: auto;
-}
-
-.row {
-    text-align: center; 
-}
-
----------------------------------Tutorial*/
 * {
     padding: 0;
     box-sizing: border-box;
