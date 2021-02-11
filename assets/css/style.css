@@ -1,4 +1,8 @@
+/* ------------------------------------ My original styles*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap300, 400, 500, 600, 700, 800, 900');
+
+/*
 
 html {
     height: 100%;
@@ -11,6 +15,8 @@ body {
     background-attachment: fixed;
 }
 
+*/
+
 .logo {
     font-family: 'Roboto Slab', serif;
     text-align: center;
@@ -18,6 +24,7 @@ body {
     font-size: 4em;
 }
 
+/*
 .card {
     display: inline-block;
     width: 125px;
@@ -35,5 +42,49 @@ body {
 }
 
 .row {
-    text-align: center;
+    text-align: center; 
 }
+
+---------------------------------Tutorial*/
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(#D0D7DD, #4c5c68);
+}
+
+.memory-game {
+    width: 1170px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(12% - 6px);
+    height: calc(50% - 6px);
+    margin: 3px;
+    position: relative;
+    transform: scale(1);
+}
+
+.card:active {
+    transform: scale(.95);
+    transition: transform .3s;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    /*padding-bottom: 5px;*/
+    position: absolute;
+    /*border-radius: 5px;
+    background: #c5c3c6;*/
+}
+
+
