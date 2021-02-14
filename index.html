@@ -17,8 +17,7 @@
         <h1 class="logo">Typo-tiles</h1>
     </div>
 
-    <div class="timer">0mins 0secs</div>
-    <span class="moves"></span> Move(s)
+    
     <section class="score-panel">
         <ul class="stars">
             <li><i class="fa fa-star"></i></li>
@@ -26,6 +25,8 @@
             <li><i class="fa fa-star"></i></li>
         </ul>
     </section>
+    <div class="timer">0mins 0secs</div>
+    <span class="moves"></span> Move(s)
 
     <section class="memory-game">
         <div class="card" data-typeface="american-typewriter">
@@ -93,15 +94,18 @@
             <img class="card-back" src="assets/images/card-back-navy.svg" alt="Card Back">
         </div>
     </section>
+<br>
+    <div class="center-button">
+        <a class="button" href="#" onclick="restartGame();">Back to Start</a>
+  </div>
 
-    <div><a class="yellowBtn button" href="#" onclick="restartGame();">Back to Start</a></div>
 
     <div id="popup1" class="overlay">
             <div class="popup">
-                <h2>Congratulations 🎉</h2>
                 <a class="close" href="#" >×</a>
+                <h1 class="logo-modal">Typo-Tiles</h1>
                 <div class="content-1">
-                    Congratulations you're a winner 🎉🎉
+                    Complete!
                 </div>
                 <div class="content-2">
                     <p>You made <span id="finalMove"> </span> moves </p>

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap300, 400, 500, 600, 700, 800, 900');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap300 400, 500, 600, 700, 800, 900');
 
-/** {
+* {
     padding: 0;
     box-sizing: border-box;
 }*/
@@ -15,26 +14,38 @@ body {
     height: 100%;
     background: radial-gradient(#D0D7DD, #4c5c68);
     font-family: 'Roboto Slab', serif;
-    color: #1d2429;
+    color: #404e58;
     font-size: 17px;
 }
 
 .logo {
     font-family: 'Roboto Slab', serif;
-    margin: 25px 25px;
+    margin: 25px 30px;
     padding-left: 40px;
     text-align: left;
     color: #c5c3c6;
     font-size: 4em;
 }
 
+.center-button {
+    text-align: center;
+    padding-top: 15px;
+}
+
 .button {
     background-color: #95ddee;
-    border: 2px #95ddee;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 5px;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 20px;
     font-size: 1em;
+    padding: 15px 20px;
+    justify-content: center;
+    margin: 500px;
+    color: #4c5c68;
+}
+
+.button:hover {
+    background-color: #c5c3c6;
 }
 
 .memory-game {
@@ -45,6 +56,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     perspective: 1000px;
+    padding-top: 25px;
 }
 
 .card {
@@ -92,9 +104,8 @@ body {
 
 .score-panel {
 	text-align: right;
-    margin-bottom: 10px;
     padding-right: 100px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .score-panel .stars {
@@ -144,17 +155,17 @@ body {
 	margin: 70px auto;
 	padding: 20px;
 	background: radial-gradient(#D0D7DD, #4c5c68);
-	border-radius: 5px;
-	width: 85%;
+	border-radius: 40px;
+	width: 40%;
 	position: relative;
 	transition: all 5s ease-in-out;
-	font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;
+    color: #4c5c68;
 }
-  
-.popup h2 {
-	margin-top: 0;
-	color: #333;
-	font-family: 'Roboto', sans-serif;
+
+.logo-modal {
+    color: #95ddee;
+    text-align: center;
 }
 
 .popup .close {
