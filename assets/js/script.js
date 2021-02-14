@@ -7,9 +7,6 @@ let counter = document.querySelector(".moves");
 // declare variable for star icons
 const stars = document.querySelectorAll(".fa-star");
 
-// stars list
-let starsList = document.querySelectorAll(".stars li");
-
 // card list
 const cards = document.querySelectorAll('.card');
 
@@ -120,9 +117,9 @@ function moveCounter() {
 }
 
 // -------- Game timer 
-var second = 0, minute = 0; hour = 0;
-var timer = document.querySelector(".timer");
-var interval;
+let second = 0, minute = 0; hour = 0;
+let timer = document.querySelector(".timer");
+let interval;
 function startTimer() {
     interval = setInterval(function () {
         timer.innerHTML = minute + "mins " + second + "secs";
@@ -145,7 +142,7 @@ function startTimer() {
 let closeicon = document.querySelector(".close");
 
 // declare modal
-let modal = document.getElementById("popup1")
+let modal = document.getElementById("popup1");
 
 function congratulations() {
 
@@ -156,7 +153,7 @@ function congratulations() {
     modal.classList.add("show");
 
     // declare star rating variable
-    var starRating = document.querySelector(".stars").innerHTML;
+    let starRating = document.querySelector(".stars").innerHTML;
 
     //showing move, rating, time on modal
     document.getElementById("finalMove").innerHTML = moves;
@@ -165,7 +162,7 @@ function congratulations() {
 
     // calls close modal function
     closeModal();
-};
+}
 
 // -------- close icon on modal function
 function closeModal() {
