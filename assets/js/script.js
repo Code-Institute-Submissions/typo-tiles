@@ -1,12 +1,29 @@
-// https://marina-ferreira.github.io/tutorials/js/memory-game/
+// Started constructing the Javascript with the help of this tutorial by Marina Frerreira: https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw
 
+// declare variable for moves (counter)
+let moves = 0;
+let counter = document.querySelector(".moves");
+
+// declare variable for star icons
+const stars = document.querySelectorAll(".fa-star");
+
+// stars list
+let starsList = document.querySelectorAll(".stars li");
+
+// card list
 const cards = document.querySelectorAll('.card');
+
+// Variable to count the card pairings
+let matchCounter = 0;
 
 let hasFlipppedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-// ------- Flipcard function...
+// ------- Click event listener card flip
+cards.forEach(card => card.addEventListener('click', flipCard));
+
+// ------- Flipcard function
 function flipCard() {
     if (lockBoard) return;
     moveCounter();
@@ -14,23 +31,18 @@ function flipCard() {
 
     this.classList.add('flip');
 
-
-
     if (!hasFlipppedCard) {
         //first click
         hasFlipppedCard = true;
         firstCard = this;
-
-
         return;
     }
     //second click
     secondCard = this;
-
     checkForMatch();
 }
 
-// ------- Check if cards match function...
+// ------- Check if cards match function, will flip back in no match is found, if all matches are found, call congratulations popup modal...
 function checkForMatch() {
     let isMatch = firstCard.dataset.typeface === secondCard.dataset.typeface;
 
@@ -39,18 +51,13 @@ function checkForMatch() {
         disableCards();
         if (matchCounter == (cards.length / 2)) {
             congratulations();
-            //         window.alert("Congratulations! You Won!");
         }
     } else {
         unFlipCards();
     }
 }
-//------------------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------------------
 
-// ------- It's a match function...
+// ------- It's a match function, remove the flipcard ability and call reset board to prevent further clicks on matched cards
 function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
@@ -70,13 +77,13 @@ function unFlipCards() {
     }, 1500);
 }
 
-// ------- Reset board function...
+// ------- Reset board function to prevent triple click and double click bugs
 function resetBoard() {
     [hasFlipppedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
 
-// ------- Shuffle function...iife
+// ------- Shuffle function, (iife - Immediately invoked function expression)
 (function shuffle() {
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 12);
@@ -84,24 +91,7 @@ function resetBoard() {
     });
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCard));
-
-function restartGame() {
-    location.reload();
-}
-
-// ------- Tester code ----------------------------------------------------------
-
-let moves = 0;
-let counter = document.querySelector(".moves");
-
-// declare variables for star icons
-const stars = document.querySelectorAll(".fa-star");
-
-// stars list
-let starsList = document.querySelectorAll(".stars li");
-
-// @description count player's moves
+// ------- Count player's moves incremently, linked with timer and star rating
 function moveCounter() {
     moves++;
     counter.innerHTML = moves;
@@ -129,9 +119,7 @@ function moveCounter() {
     }
 }
 
-//----------------------------------------------------------------------------------------
-
-// @description game timer
+// -------- Game timer 
 var second = 0, minute = 0; hour = 0;
 var timer = document.querySelector(".timer");
 var interval;
@@ -149,25 +137,22 @@ function startTimer() {
         }
     }, 1000);
 }
-//Variable to count the card pairings
-let matchCounter = 0;
-//----------------------------------------------------------------------------------------
 
- // close icon in modal
- let closeicon = document.querySelector(".close");
 
- // declare modal
- let modal = document.getElementById("popup1")
+// -------- popup modal for when all cards match, displays moves, time and star rating
 
-//let matchedCard = document.getElementsByClassName("match");
-// @description congratulations when all cards match, show modal and moves, time and rating
+// close icon in modal
+let closeicon = document.querySelector(".close");
+
+// declare modal
+let modal = document.getElementById("popup1")
+
 function congratulations() {
-    //   if  (match.length == 16) {
 
     clearInterval(interval);
     finalTime = timer.innerHTML;
 
-    // show congratulations modal
+    // shows 'Complete!' upon receiving .show class
     modal.classList.add("show");
 
     // declare star rating variable
@@ -178,14 +163,19 @@ function congratulations() {
     document.getElementById("starRating").innerHTML = starRating;
     document.getElementById("totalTime").innerHTML = finalTime;
 
-    //closeicon on modal
+    // calls close modal function
     closeModal();
 };
 
+// -------- close icon on modal function
+function closeModal() {
+    closeicon.addEventListener("click", function (e) {
+        modal.classList.remove("show");
+        restartGame();
+    });
+}
 
-
-//---------------------------------------------------------------------------------------- 
-
-//----------------------------------------------------------------------------------------
-
-//  Memory game flip tile code adapted from: https://marina-ferreira.github.io/projects/js/memory-game/
+// -------- Restart the game function linked to 'Back to start' button
+function restartGame() {
+    location.reload();
+}

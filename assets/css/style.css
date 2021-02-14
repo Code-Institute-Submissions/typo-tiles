@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap300, 400, 500, 600, 700, 800, 900');
 
-/* background CSS code taken from CSS Tricks: https://css-tricks.com/perfect-full-page-background-image/*/
 
+/* ------------------------------------- Background gradient */
 html {
   background: radial-gradient(#D0D7DD, #4c5c68) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -12,12 +12,7 @@ html {
   padding: 0;
 }
 
-/* {
-    padding: 0;
-    box-sizing: border-box;
-}*/
-
-/* styles 'moves' */
+/* ------------------------------------- styles the word 'moves' */
 body {
     margin: 0;
     padding: 0; 
@@ -27,6 +22,7 @@ body {
 
 }
 
+/* ------------------------------------- Main title of game / Logo */
 .logo {
     font-family: 'Roboto Slab', serif;
     margin: 25px 30px;
@@ -36,30 +32,7 @@ body {
     font-size: 4em;
 }
 
-/* ------------------------------------- Back to start button */
-.center-button {
-    text-align: center;
-    padding-top: 15px;
-}
-
-.button {
-    background-color: #95ddee;
-    text-decoration: none;
-    font-family: 'Roboto Slab', serif;
-    border-radius: 20px;
-    font-size: 1em;
-    padding: 15px 20px;
-    justify-content: center;
-    margin: 500px;
-    color: #4c5c68;
-}
-
-.button:hover {
-    background-color: #c5c3c6;
-}
-
-/* ------------------------------------- Game board */
-
+/* ------------------------------------- Cards and card-flip transition */
 .memory-game {
     width: 1170px;
     height: 400px;
@@ -101,7 +74,7 @@ body {
     transform: rotateY(180deg);
 }
 
-/*-------------------------------------- Tester code */
+/*-------------------------------------- Timer, stars and moves counter */
 
 .timer {
 	/*display: inline-block;*/
@@ -138,6 +111,28 @@ body {
 
 .moves {
     font-family: 'Roboto Slab', serif;
+}
+
+/* ------------------------------------- Back to start button */
+.center-button {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.button {
+    background-color: #95ddee;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 20px;
+    font-size: 1em;
+    padding: 15px 20px;
+    justify-content: center;
+    margin: 500px;
+    color: #4c5c68;
+}
+
+.button:hover {
+    background-color: #c5c3c6;
 }
 
 /* ------------------------------------- Media Queries */
@@ -226,7 +221,7 @@ body {
 	}
 
 }
-/* ------------------- Larger tablet devices and screens */
+/* ------------------- Larger tablet (iPad Pro) devices and screens */
 @media screen and (max-width: 1024px) and (min-width: 901px) {
     .memory-game {
     width: 90%;
@@ -266,8 +261,6 @@ body {
 }
 
 /* ------------------------------------- Game complete pop-up modal */
-
-
 .overlay {
 	position: fixed;
 	top: 0;
