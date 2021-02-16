@@ -270,7 +270,13 @@ body {
         margin: 0;
     }
 
+}
 
+/* ------------------- Larger screens (button bug-fix)*/
+@media screen and (max-width: 1142px) and (min-width: 1025px) {
+    .button {
+        margin: 0;
+    }
 }
 
 /* ------------------------------------- Game complete pop-up modal */
