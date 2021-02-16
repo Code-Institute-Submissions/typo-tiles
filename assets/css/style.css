@@ -47,6 +47,7 @@ body {
     margin: 3px;
     position: relative;
     transform: scale(1);
+    -moz-transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
 }
@@ -65,6 +66,7 @@ body {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
 }
 
 .card-front {
