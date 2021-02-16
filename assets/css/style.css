@@ -48,17 +48,25 @@ body {
     position: relative;
     transform: scale(1);
     -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
 }
 
 .card:active {
     transform: scale(.95);
+    -moz-transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -o-transform: scale(.95);
     transition: transform .3s;
 }
 
 .card.flip {
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 .card-front, .card-back {
@@ -67,10 +75,16 @@ body {
     position: absolute;
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
 }
 
 .card-front {
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform:rotateY(180deg);
+
 }
 
 /*-------------------------------------- Timer, stars and moves counter */
