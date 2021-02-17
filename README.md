@@ -133,15 +133,16 @@ A list of the resources are below:
 
 ## CSS resources and research
 - [Can I Use? To test if CSS styles need prefix vendors](https://caniuse.com/)
-- [CSS Tricks](https://css-tricks.com/)
+- [CSS Tricks - To find a solution to the background bug](https://css-tricks.com/perfect-full-page-background-image/*/)
 
 ## Validators and Testing sites used
-[Javascript Validator](https://beautifytools.com/javascript-validator.php)
-[HTML Validator](https://validator.w3.org/)
-[CSS Validator]()
-[Responsive testing]()
+- [Javascript Validator](https://beautifytools.com/javascript-validator.php)
+- [HTML Validator](https://validator.w3.org/)
+- [CSS Validator](http://www.css-validator.org/)
+- [Responsive testing](http://ami.responsivedesign.is/)
 
-## Media
+## Media
+
 The card deck images used in the site were designed by myself in Adobe Illustrator.
 
 ## Acknowledgements
@@ -150,33 +151,3 @@ I received inspiration for ideas, colour palette and design of this project from
 - [the Type War game](http://typewar.com/)
 - [Shoot the Serif game](https://www.tothepoint.co.uk/us/fun/i-shot-the-serif/)
 - [Coolers colour palette generation site](https://coolors.co/)
-
-
-
-
-[Background CSS code taken from CSS Tricks - to prevent background bug](https://css-tricks.com/perfect-full-page-background-image/*/)
-
-[Stack Overflow - Use of @Import typeface](https://stackoverflow.com/questions/10036977/best-way-to-include-css-why-use-import#:~:text=From%20a%20page%20speed%20standpoint,stylesheet%20A%20contains%20the%20text%3A&text=If%20both%20stylesheets%20are%20always,them%20into%20a%20single%20file.)
-
-[Can I Use? To test if CSS styles need prefix vendors](https://caniuse.com/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
