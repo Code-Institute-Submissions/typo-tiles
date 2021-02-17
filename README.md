@@ -72,42 +72,94 @@ After testing the mockup's at different screen sizes, I concluded that less info
 ![typo-cards](readme-images/typo-cards.png)
 ![typo-final](readme-images/typo-final.png)
 
-# 
+# Features
+
+1. Card deck (face down) - users can click two cards to flip them over, compare them, if there's a match, they'll remain flipped, if not, they'll turn back face down.
+2. The event of clicking on a card will start the timer and a move counter above the board.
+3. Upon 24 card clicks, the 'stars rating' above the card deck will reduce from 3 to 2.
+4. Upon 32 card clicks, the 'stars rating' will reduce from 2 to 1.
+5. A button can be located beneath the center of the deck - 'Back to start', this resets the game, shuffle's the cards and resets all timers, move counters and stars.
+6. Once all cards have been matched, a modal will pop-up indicating completion of the game, it will report the moves made, duration of time and a star rating.
+7. Upon closing the modal, the game will be reset.
+
+The game is fully responsive for all screen sizes but is best playable on a larger screen to avoid scrolling around for cards. 
+I wanted to avoid decreasing the size of the cards for smaller screen sizes because this would reduce legibility. 
+I designed the deck in Adobe Illustrator because I wanted the card 'images' to be SVG's. This means the card deck won't lose any resolution quality and the file sizes are very small, 
+allowing the game and the functionality to load and run quickly for the user. 
+I started the Javascript code by following an online tutorial by [Marina Frerreira](https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw). I used this to get started and adapted it with my own deisgn and added functionality.
+
+## Additional considerations and features to implement in the future
+
+1. Add 2 levels to the game, providing additional challenge and progression. I'd do this by adding more rows of card pairs. With this, I'd also increase the amount of stars from 3 to 5.
+This was something I originally wanted to include in the game. With more time and research, this is something I will implement in the future. 
+2. Add a local storage fucntion to preserve user's personal scores to beat in the future. This was something I also wanted to implement and will work on adding in the future.
+3. Add links to the flipped cards to direct the user  to additional information on the typefaces/font. I would add a click event function for this, upon matching 2 cards. This could allow the user to access more information about the typefaces if they wanted. 
+
+# Technologies Used
+
+- [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html) Used for creating the card deck - front and backs. Also, the deisgn and mockups. (All card deck typefaces were from Adobe Illustrator).
+- [Gitpod and Github](https://github.com/RoxJade/typo-tiles) All code and files created in Gitpod, repository in Github, site published and hosted in Github pages.
+- HTML, used to create the main page and pop-up modal.
+- CSS, used to style the project and make it responsive.
+- Javascript - 'vanilla Javascript' used to create the game functionality, no additonal Javascript libraries used.
+- [Google fonts](https://fonts.google.com/specimen/Roboto+Slab?preview.text_type=custom) Roboto Slab typeface used for the Logo and font throughout the project. 
+- [Font Awesome](https://fontawesome.com/) Used to add the 'star' icons for the rating system.
+
+# Credits
+## Content
+The design of the site was created by myself. I started the Javascript code by following an online tutorial by [Marina Frerreira](https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw).
+Further research included watching a series of tutorials and reading through many different resources, game code examples, tutorials with my Mentor and thoroughly recapping the Code Institute Javascript Essentials module. 
+This helped to familiarise me with Javascript code, functions and the syntax, which I found very challenging in this project and required a lot of additional research before I started to feel comfortable with the code.
+A list of the resources are below:
+
+## Javascript resources and research
+- [Code Institute - Javascript Essentials Module](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+JSF101+2017_T1/info)
+- [Marina Frerreira - How to create a pair matching game](https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw)
+- [Free Frontend - 14 examples of Javascript pairs games](https://freefrontend.com/javascript-memory-games/)
+- [Port EXE - How to create the Javascript for a spooky pair matching game](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=0s)
+- [Sandra Israel - How to build a memory game in Javascript tutorial](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript)
+- [Ania Kubow - Building 7 games with Javascript](https://www.youtube.com/watch?v=lhNdUVh3qCc&t=1128s)
+- [Adam Khoury - Programming a pairs game in Javascript](http://www.developphp.com/video/JavaScript/Memory-Game-Programming-Tutorial)
+- [Code Mentor - How to create a counter in Javascript](https://www.codementor.io/@jamesezechukwu/how-to-create-a-simple-counter-using-javascript-html-css-bxcjgbbxa)
+- [Web Dev Simplified - How to build a card game with Javascript](https://www.youtube.com/watch?v=NxRwIZWjLtE)
+- [JQuery - How to animate (additional research I initially considered using in the game)](https://jqueryui.com/animate/)
+- [Digital Ocean - Javascript tutorials](https://www.digitalocean.com/community/tutorials/how-to-write-comments-in-javascript)
+
+## Additional resources and research
+- [Stack Overflow](https://stackoverflow.com/)
+- [W3 Schools](https://www.w3schools.com/)
+- [CDNJS](https://cdnjs.com/)
+- [Slack](https://app.slack.com/)
+
+## CSS resources and research
+- [Can I Use? To test if CSS styles need prefix vendors](https://caniuse.com/)
+- [CSS Tricks](https://css-tricks.com/)
+
+## Validators and Testing sites used
+[Javascript Validator](https://beautifytools.com/javascript-validator.php)
+[HTML Validator](https://validator.w3.org/)
+[CSS Validator]()
+[Responsive testing]()
+
+## Media
+The card deck images used in the site were designed by myself in Adobe Illustrator.
+
+## Acknowledgements
+I received inspiration for ideas, colour palette and design of this project from: 
+- [The Type Kerning Game](https://type.method.ac/)
+- [the Type War game](http://typewar.com/)
+- [Shoot the Serif game](https://www.tothepoint.co.uk/us/fun/i-shot-the-serif/)
+- [Coolers colour palette generation site](https://coolors.co/)
 
 
 
 
+[Background CSS code taken from CSS Tricks - to prevent background bug](https://css-tricks.com/perfect-full-page-background-image/*/)
 
+[Stack Overflow - Use of @Import typeface](https://stackoverflow.com/questions/10036977/best-way-to-include-css-why-use-import#:~:text=From%20a%20page%20speed%20standpoint,stylesheet%20A%20contains%20the%20text%3A&text=If%20both%20stylesheets%20are%20always,them%20into%20a%20single%20file.)
 
+[Can I Use? To test if CSS styles need prefix vendors](https://caniuse.com/)
 
-
-
-## Additional considerations for the game
-
-Things I would do to improve: 
-1. Add an additional row of pairs/progressive levels
-2. Add local storage to preserve user personal scores to beat in the future
-3. Add links to the flipped card - extra functionality
-
-*use svg's to make it load quicker and not lose resolution
-
-
-
-https://type.method.ac/ - The type kerning game, http://typewar.com/ - Type War
-
-
-
-
-/* background CSS code taken from CSS Tricks: https://css-tricks.com/perfect-full-page-background-image/*/
-
-
-Tech used:
-
-Adobe Illustrator
-Gitpod
-HTML CSS Javascript
-Google fonts
-Font Awesome
 
 
 
