@@ -77,14 +77,17 @@ I want to:
 I developed a series of mockups, colour palettes and card designs in Adobe Illustrator.
 Initially, I wanted to add more information to the cards, but I had to consider how to maintain the responsiveness on smaller screen sizes. 
 After testing the mockup's at different screen sizes, I concluded that less information was more legible on smaller screens. 
-<br>
 
 ![typo-illustrator](readme-images/typo-illustrator.png)
-![typo-card-info](readme-images/typo-card-info.png)
+<img alt=typo-card-info.png src="readme-images/typo-card-info.png" width=55%>
 ![typo-cards](readme-images/typo-cards.png)
-![typo-final](readme-images/typo-final.png)
+
 
 # Features
+
+![typo-final](readme-images/typo-final.png)
+<img alt=typo-modal.png src="readme-images/typo-modal.png" width=75%>
+
 
 1. Card deck (face down) - users can click two cards to flip them over, compare them, if there's a match, they'll remain flipped, if not, they'll turn back face down.
 2. The event of clicking on a card will start the timer and a move counter above the board.
