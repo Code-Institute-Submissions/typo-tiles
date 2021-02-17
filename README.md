@@ -2,6 +2,8 @@
 
 # Typo-tiles
 
+[Visit the Typo-tiles Game site here](https://roxjade.github.io/typo-tiles/)
+
 Typo-tiles is a card matching game based on matching a selection of iconic typefaces. It's a short game designed to be fun and informative. 
 As with any card-matching game, the idea is to match the two typefaces until all cards are matched.
 Taking inspiration from
@@ -9,6 +11,16 @@ Taking inspiration from
 there is also a starting point of information for the player to use as a prompt or starting point for further research into each typeface. 
 
 Typo-tiles has been created with HTML, CSS and Javascript. It is responsive on multiple screen sizes mobile, tablet and desktop. It's most effective to play on tablet screen sizes and above.
+
+# Contents
+1. [UX](#UX)
+2. [Wireframes, Mockups and Design](#Wireframes,-Mockups-and-Design)
+3. [Features](#Features)
+4. [Technologies Used](#Technologies-used)
+5. [Credits](#Credits)
+
+Testing can be found in a separate file:
+[Testing](#/TESTING.md)
 
 # UX
 
