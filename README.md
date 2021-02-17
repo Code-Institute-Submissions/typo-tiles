@@ -20,7 +20,7 @@ Typo-tiles has been created with HTML, CSS and Javascript. It is responsive on m
 5. [Credits](#Credits)
 
 Testing can be found in a separate file:
-[Testing](#typo-tiles/TESTING.md)
+[Testing](https://github.com/RoxJade/typo-tiles/blob/master/TESTING.md)
 
 # UX
 
