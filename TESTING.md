@@ -1,4 +1,4 @@
-# Typo-tiles - Testing and Deployment
+# Testing and Deployment
 
 [Visit the Typo-tiles Game site here](https://roxjade.github.io/typo-tiles/)
 
@@ -18,13 +18,14 @@ At the start of the project I had the idea to create colour-mathing clickable ti
 Initially, I found Javascript very challenging and required a lot of additional research before I started to feel comfortable with the code. So I carried out a huge amount of research, reading, revisiting the course material on Code Institute and discussing ideas with my Mentor. Eventually, I settled on a typography-based card-matching game.
 As I continued to use it to develop the game, I found it rewarding to learn and I'm exctied to continue to improve my skills in the future. 
 
-## Issues in the development process
+## Issues in development
 
 - **Had to change the card design for legibility:** After creating and styling the board, I looked at the front of the cards and realised I'd have to change the design slightly (images can be found in the [README.md Wireframes and Mockups](https://github.com/RoxJade/typo-tiles/blob/master/README.md#Wireframes-and-Mockups). This was to ensure legibility and responsiveness.
 
 - **Double click issue:** After developing the flip card function I found a bug where the a double click on the same card registered as two matching flipped cards and remained flipped as they both shared the same '.data-typeface' class. For this I created a reset board function - which prevents the double click by resetting the first and second card properties to null.
 
-<img alt=typo-doubleclick-bug.png src="readme-images/typo-doubleclick-bug.png" width=20%>
+<img alt=typo-doubleclick-bug.png src="readme-images/typo-doubleclick-bug.png" width=30%>
+<img alt=typo-move-fix.png src="readme-images/typo-move-fix.png" width=30.5%>
 
 - **Star rating system too harsh:** After asking a friend to play through the game, I discovered that the star rating (linked to the move counter) was too low, so I increased these. 
 
@@ -36,10 +37,10 @@ After research I created a location.reload(); function but I'm unsure if this is
 - **Background Issue:** I had trouble with the background of the page. I found that it was repeating. If I specified 'no-reapeat' in the styling, it was then cutting the background too short for the length of the page, even when I set it too 100% viewport height. 
 After some research I found a handy article and some code on [CSS Tricks - perfect full page background](https://css-tricks.com/perfect-full-page-background-image/*/) to prevent the bug using 'cover' styling. 
 
-<img alt=typo-repeat-background1 src="readme-images/typo-repeat-background.png" width=45%>
-<img alt=typo-repeat-background2 src="readme-images/typo-repeat-background2.png" width=45%>
+<img alt=typo-repeat-background1 src="readme-images/typo-repeat-background.png" width=44%>
+<img alt=typo-repeat-background2 src="readme-images/typo-repeat-background2.png" width=44%>
 
-<img alt=typo-background-fix3 src="readme-images/typo-background-fix3.png" width=55%>
+<img alt=typo-background-fix3 src="readme-images/typo-background-fix3.png" width=50%>
 <img alt=typo-background-fix2 src="readme-images/typo-background-fix2.png" width=35%>
 
 - **Media query issues:** Once the functionality was complete, I looked at responsiveness of the game and had to add more media queries than I would have liked. In future, I'd consider using Bootstrap columns and rows as I think it would help to reduce the amount of media queries and would probably be better practice for my CSS. 
@@ -67,7 +68,7 @@ User Stories can be found in [The README.md UX](https://github.com/RoxJade/typo-
 # Responsiveness
 
 ![typo-responsive.png](readme-images/typo-responsive.png)
-It took a lot of media queries to resolve the responsiveness of the site, see [issues in the development process](##issues-in-the-development-process) and [Restart game button breaks at larger screen size](##Restart-game-button-breaks-at-larger-screen-size) for issues with responsiveness at different stages. 
+It took a lot of media queries to resolve the responsiveness of the site, see [Issues in development](#Issues-in-development) and [Restart game button breaks at larger screen size](#Restart-game-button-breaks-at-larger-screen-size) for issues with responsiveness at different stages. 
 I tested the game on [Am I Responsive](http://ami.responsivedesign.is/). Although playable on mobile, it requires some scrolling around, therefore it is a more effective game to play on tablet screens and above. I couldn't avoid this as I needed to maintain card legibility. 
 
 ## Code Validators and Lighthouse
@@ -116,6 +117,10 @@ When tested on Lighthouse:
 <img alt=typo-lighthouse.png src="readme-images/typo-lighthouse.png" width=80%>
 
 # Deployment 
+
+I used Github to create the repository, Gitpod to code and Github to publish and host the site on Github pages. 
+
+<img alt=typo-github-deploy.png src="readme-images/typo-github.png" width=55%>
 
 ## Bugs discovered after deployment
 
