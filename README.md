@@ -14,13 +14,13 @@ Typo-tiles has been created with HTML, CSS and Javascript. It is responsive on m
 
 # Contents
 1. [UX](#UX)
-2. [Wireframes, Mockups and Design](#Wireframes,-Mockups-and-Design)
+2. [Wireframes and Mockups](#Wireframes-and-Mockups)
 3. [Features](#Features)
 4. [Technologies Used](#Technologies-used)
 5. [Credits](#Credits)
 
 Testing can be found in a separate file:
-[Testing](#/TESTING.md)
+[Testing](#typo-tiles/TESTING.md)
 
 # UX
 
@@ -72,7 +72,7 @@ I want to:
 - Keep the page layout simple, with minimal information. 
 - Dependant on screen size, the game fit's to the size of the screen, changing the layout of the card deck, without losing resolution
 
-# Wireframes, Mockups and Design
+# Wireframes and Mockups
 
 I developed a series of mockups, colour palettes and card designs in Adobe Illustrator.
 Initially, I wanted to add more information to the cards, but I had to consider how to maintain the responsiveness on smaller screen sizes. 
