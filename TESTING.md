@@ -24,8 +24,8 @@ As I continued to use it to develop the game, I found it rewarding to learn and 
 
 - **Double click issue:** After developing the flip card function I found a bug where the a double click on the same card registered as two matching flipped cards and remained flipped as they both shared the same '.data-typeface' class. For this I created a reset board function - which prevents the double click by resetting the first and second card properties to null.
 
-<img alt=typo-doubleclick-bug.png src="readme-images/typo-doubleclick-bug.png" width=30%>
-<img alt=typo-move-fix.png src="readme-images/typo-move-fix.png" width=30.5%>
+<img alt=typo-doubleclick-bug.png src="readme-images/typo-doubleclick-bug.png" width=20%>
+<img alt=typo-move-fix.png src="readme-images/typo-move-fix.png" width=20%>
 
 - **Star rating system too harsh:** After asking a friend to play through the game, I discovered that the star rating (linked to the move counter) was too low, so I increased these. 
 
@@ -37,11 +37,11 @@ After research I created a location.reload(); function but I'm unsure if this is
 - **Background Issue:** I had trouble with the background of the page. I found that it was repeating. If I specified 'no-reapeat' in the styling, it was then cutting the background too short for the length of the page, even when I set it too 100% viewport height. 
 After some research I found a handy article and some code on [CSS Tricks - perfect full page background](https://css-tricks.com/perfect-full-page-background-image/*/) to prevent the bug using 'cover' styling. 
 
-<img alt=typo-repeat-background1 src="readme-images/typo-repeat-background.png" width=44%>
-<img alt=typo-repeat-background2 src="readme-images/typo-repeat-background2.png" width=44%>
+<img alt=typo-repeat-background1 src="readme-images/typo-repeat-background.png" width=40%>
+<img alt=typo-repeat-background2 src="readme-images/typo-repeat-background2.png" width=40%>
 
 <img alt=typo-background-fix3 src="readme-images/typo-background-fix3.png" width=50%>
-<img alt=typo-background-fix2 src="readme-images/typo-background-fix2.png" width=35%>
+<img alt=typo-background-fix2 src="readme-images/typo-background-fix2.png" width=20%>
 
 - **Media query issues:** Once the functionality was complete, I looked at responsiveness of the game and had to add more media queries than I would have liked. In future, I'd consider using Bootstrap columns and rows as I think it would help to reduce the amount of media queries and would probably be better practice for my CSS. 
 
